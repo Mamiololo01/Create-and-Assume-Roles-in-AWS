@@ -1,0 +1,9 @@
+Pleaase ensure you are operating out of the N. Virginia (us-east-1) region.
+NOTE: The lab shows the attaching policies to AWS users; in the real world, we would want to administer from the group level whenever possible. 
+AWS now auto logs out when logging in as another user (even if in a new Incognito/Private Window). As a work around, you can right-click the 
+lab's blue "Open Link in Incognito/Private Window` button and copy the link into a different browser. You'll then be able to be logged into the other 
+account using the lab provided credentials. The lab is easiest to do with 3 different browsers due to the new AWS logout behaviour.
+
+* dev1 password: 3Kk6!AY36^5h1rolJYb@C
+* dev2 password: 3Kk6!AY36^5h1rolJYb@C
+* dev3 password: 3Kk6!AY36^5h1rolJYb@C
