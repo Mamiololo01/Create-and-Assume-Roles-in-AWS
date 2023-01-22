@@ -1,0 +1,28 @@
+Create the Correct S3 Restricted Policies and Roles
+
+Perform the following tasks:
+1. Create the S3RestrictedPolicy IAM policy. Ensure only the appconfig buckets are accessible.
+    * Select the S3 service and all S3 actions
+    * Select all resources except bucket
+    * Add the appconfig bucket names to the policy
+2. Create the S3RestrictedRole IAM role.
+    * Set the trusted entity to another AWS account
+    * Add your account ID
+    * For permissions, select the S3RestrictedPolicy
+3. Revoke the AmazonS3FullAccess access policy from the developergroup.
+4. Attach the S3RestrictedPolicy to the dev1 user.
+Run Progress Check
+
+
+Configure IAM So the dev3 User Can Assume the Role
+
+Perform the following tasks:
+1. Create the AssumeS3Policy IAM policy.
+    * Select the STS service
+    * Select AssumeRole under the write options
+    * Add the S3RestrictedRole
+2. Attach the AssumeS3Policy to the dev3 user.
+3. Assume the S3RestrictedRole as the dev3 user.
+    * Log in as the dev3 user
+    * Switch roles to the S3RestrictedRole
+    * Verify access in S3
